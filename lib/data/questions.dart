@@ -8,7 +8,3 @@ const questions = [
     ],
   ),
   QuizQuestion(
-
-
-
-
