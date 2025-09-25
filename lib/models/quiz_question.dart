@@ -1,11 +1,11 @@
 class QuizQuestion {
   const QuizQuestion(
     {
-     this.text,
-     this.amswers,
+     required this.text,
+     required this.amswers,
     }
   );
-  final String text: 
-  final list<String> amswers;
+  final String text; 
+  final List<String> amswers;
 }
 
