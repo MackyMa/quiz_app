@@ -1,7 +1,7 @@
 //import 'package:quiz_app/start_screen.dart';
 import 'package:quiz_app/models/quiz_question.dart';
 
-const question = [
+const questions = [
   QuizQuestion(
     "In Attack on Titan, what is the name of Eren Yeager's hometown?"
     , [
