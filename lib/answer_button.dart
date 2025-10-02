@@ -1,6 +1,7 @@
 //import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AnswerButton extends StatelessWidget {
   const AnswerButton({
@@ -14,7 +15,7 @@ class AnswerButton extends StatelessWidget {
 
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(context) {
     return ElevatedButton(
       onPressed: onTap, 
       style: ElevatedButton.styleFrom(
@@ -25,7 +26,15 @@ class AnswerButton extends StatelessWidget {
           horizontal: 40,
         ),
       ),
-      child: Text(answerText),
+      child: Text(
+        answerText,
+      textAlign: TextAlign.center,
+      style: GoogleFonts.lato(
+        color: Colors.white,
+        fontSize: 24,
+        fontWeight: FontWeight.bold,
+      )
+      )
       );
   }
 }
