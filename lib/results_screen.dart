@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/data/questions.dart';
-import 'package:quiz_app/questions_screen.dart';
+import 'package:quiz_app/question_summary.dart';
 
 class ResultsScreen extends StatelessWidget {
   const ResultsScreen({super.key, required this.chosenAnswers});
@@ -32,6 +32,7 @@ List<Map<String,Object>> getSummaryData() {
             const Text('You answered X out of Y questions Correctly'),
             const SizedBox(height:30,
             ),
+            QuestionSummary(summaryData: getSummaryData()),
             const Text('List of Answers and Questions'),
             // Loop through questions and answers
             const SizedBox(
